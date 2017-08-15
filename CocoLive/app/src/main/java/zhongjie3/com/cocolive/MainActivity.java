@@ -22,8 +22,6 @@ public class MainActivity extends AppCompatActivity implements RadioGroup.OnChec
     RadioButton radioHome;
     @BindView(R.id.radioMe)
     RadioButton radioMe;
-    @BindView(R.id.btnLive)
-    Button btnLive;
 
     @OnClick(R.id.btnLive)
     public void onBtmLiveClick()
