@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="435dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp">
-        <ImageView
+        android:layout_height="60dp"
+        android:background="@color/white">
+        <zhongjie3.com.cocolive.widget.ArcImageView
             android:id="@+id/item_hot_avator"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:src="@drawable/li_btn_room_follow_bg"/>
         <TextView
             android:id="@+id/item_hot_nick"
             android:layout_width="wrap_content"
@@ -39,10 +42,16 @@
             android:id="@+id/item_hot_living_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/shape_text_living"
             android:text="@string/living"
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
-            android:layout_marginTop="12dp"/>
+            android:layout_marginTop="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textSize="14dp"/>
 
         <TextView
             android:id="@+id/item_hot_viewer_text"
@@ -52,7 +61,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="15dp"
             android:layout_below="@id/item_hot_living_text"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="2dp"/>
 
         <TextView
             android:id="@+id/item_hot_viewer_num_text"
@@ -67,7 +76,7 @@
     <ImageView
         android:id="@+id/item_hot_icon"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerInside"/>
+        android:layout_height="375dp"
+        android:scaleType="fitXY"/>
 
 </LinearLayout>
